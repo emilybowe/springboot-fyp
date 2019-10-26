@@ -1,4 +1,8 @@
 *.class
+
 *.jar
 *.war
 *.ear
+
+/mealy-server/build/
+/mealy-server/src/main/resources/application.properties
