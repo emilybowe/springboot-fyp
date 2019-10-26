@@ -13,6 +13,7 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Table(name = "ingredient")
 public class Ingredient implements Serializable {
+	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
