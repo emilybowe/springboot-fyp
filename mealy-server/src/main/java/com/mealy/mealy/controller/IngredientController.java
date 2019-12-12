@@ -33,10 +33,10 @@ public class IngredientController {
         return ingredientService.getAllIngredients();
     }
 
-    // Create a new Ingredients
+    // Create a new Ingredient
     @PostMapping("/createIngredient")
     public Ingredient createIngredient(@Valid @RequestBody Ingredient ingredient) {
-        return ingredientService.createNote(ingredient);
+        return ingredientService.createIngredient(ingredient);
     }
 
     // Get a Single Ingredient
@@ -45,7 +45,7 @@ public class IngredientController {
         return ingredientService.getIngredientById(ingredientId);
     }
 
-    // Update a Ingredients
+    // Update an Ingredients
     @PutMapping("/updateIngredient/{id}")
     public Ingredient updateIngredientById(@PathVariable(value = "id") Long ingredientId,
                                             @Valid @RequestBody Ingredient ingredientDetails) {
@@ -53,7 +53,7 @@ public class IngredientController {
         
     }
 
-    // Delete a Ingredients
+    // Delete an Ingredients
     @DeleteMapping("/deleteIngredient/{id}")
     public ResponseEntity<?> deleteIngredientById(@PathVariable(value = "id") Long ingredientId) {
        

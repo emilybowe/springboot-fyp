@@ -46,4 +46,20 @@ public class Ingredient implements Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+	public Ingredient() {
+		
+	}
+	
+	public Ingredient(String name) {
+		this.name = name;
+	}
+	
+	public Ingredient (Long id, String name, String description){
+		
+		this.setId(id);
+		this.setName(name);
+		this.setDescription(description);
+		
+	}
 }
