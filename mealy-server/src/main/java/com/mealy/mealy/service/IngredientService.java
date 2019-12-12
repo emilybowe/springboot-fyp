@@ -23,7 +23,7 @@ public class IngredientService {
         return ingredientRepository.findAll();
     }
 	
-	public Ingredient createNote(Ingredient ingredient) {
+	public Ingredient createIngredient(Ingredient ingredient) {
         return ingredientRepository.save(ingredient);
     }
 	
